@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
+        <title>Bootstrap Template</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <style>
+
+            *:has(> video.fullscreen){
+                position: relative;
+            }
+            video.fullscreen{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+            }
+            @media (min-aspect-ratio: 16/9){
+                video.fullscreen{
+                    height:auto;
+                    width:100%;
+                }
+            }
+            #slide1-background-holder{
+                background-image: url(images/selfie.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        
+            #slide2-background-holder{
+                background-image: url(images/just\ analysis_Page_5.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+            #slide3-background-holder{
+                background-image: url(images/Bandcamp_profile_pic.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+                        #slide4-background-holder{
+                background-image: url(images/cover_photo.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+                        #slide5-background-holder{
+                background-image: url(images/xitlaly.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+                                    #slide6-background-holder{
+                background-image: url(images/adobe_education_trainer.png);
+                background-size: cover;
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+
+            .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) grayscale(100); /* makes arrows visible on light backgrounds */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 2; /* ensure controls are above images */
+}
+
+:fullscreen .modal-backdrop {
+    display: none !important;
+}
+                      
+        </style>
+    </head>
+    <body>
+
+        <header class="position-relative vh-100 d-flex flex-column justify-content-center">
+            <div class="text-white text-center">
+                </div>
+            <div class="h-100 position-absolute w-100 top-1 start-0 video-holder z-n1">
+                <video class="fullscreen" src="images/15-web-hero.mp4" muted preload loop></video>
+            </div>
+
+        </header>
+
+        <div class="container">
+            <div class="row" justify-content-center>
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+
+                    <h4 class="text-center mt-5">Welcome to my portfolio</h4>
+                    <p class="text-center">The coding for this site was done by Monica</p>
+                    <p class="text-center"><time datetime="2025-05-13">March 18, 2025</time></p>
+                    <p>This portfolio site was created for the Interactive Coding Course (Journ 220) at the University of California Berkeley. To create the site I used Visual Studio Code, Adobe Illustrator, Photoshop, Premier Pro, After Effects, Rhino 3D, and work I created for my masters of architecture program.</p>                    
+                </div>
+            </div><!--close .row-->
+
+            <div class="row justify-content-center">
+                <figure class=" col-12 col-sm-10">
+                    <div class="ratio ratio-4x3">
+                    <iframe width="100%" height="300" src="//jsfiddle.net/lesliemo/9xvmownk/4/embedded/" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>    
+                    </div>
+                    <figcaption class="figure-caption text-center">Early Self Taught Projects Made With JSFiddle</figcaption>
+                </figure>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                   &nbsp; 
+                   <p>To view, click on html or result to view the section detail. You can also hover on the image and it will highlight different construction elements </p></div>
+                   <p>I self taught myself how to code and worked as an instructional media specialist for a curriculum design firm but started out coding inline css and javascript. This is a sample of my early work but I have quite a bit of early stuff on <a href="https://github.com/lesliemo">github</a> as well if you'd like to see the progression over time.</p>
+                <p>Unfortunately I don't have many work samples from building online courses in Moodle and Canvas for Universities because the work was proprietary but I will be adding more work samples from recent work soon.</p>
+                <p>I DO, however, have sample works I can share from my time as an Adobe Education Trainer through the Education Exchange. Will add soon.</p>
+                  <p>I took this course to brush up since I hadn't used javascript in awhile and wanted the opportunity to receive some formal training to be able to identify any skills gaps. I was pleasantly surprised to discover that although I did have skills gaps, the instructors lectures where very thorough and accessible and I will definitely be a better coder because of this experience.</p>  
+                </div><!--close .row-->
+
+ 
+        </div><!--close .container>-->
+
+
+        <div class="container-fluid">
+            <!-- slide 1 -->
+             <div class="row justify-content-center">
+                <div id="slide1-background-holder" class="vh-100 z-n1 sticky-top">
+                </div>
+                <div class=" col-12 col-sm-6 bg-light">
+                    <figcaption class="figure-caption text-center">ABOUT ME</figcaption>
+                   <p class="m-3">Monica Leslie is a dedicated STEAM educator and recent graduate of the Master of Architecture program at the University of California, Berkeley. With a passion for design justice, eco design, and health equity, Monica’s work bridges the worlds of architecture, education, and community engagement. At UC Berkeley, she specialized in reimagining architectural practice so that it is used as a liberatory tool rather than how the practice has been deployed historically.</p>
+                    <p>Monica’s experience spans from developing innovative STEAM curricula for diverse learners to coordinating community-driven health equity initiatives in Louisville, where she worked to address systemic disparities in health and housing. Her approach is rooted in the belief that thoughtful design and inclusive education can transform communities and foster well-being for all.</p>
+                    <p>Whether leading participatory budgeting pilots, designing sustainable spaces, or mentoring future changemakers, Monica brings warmth, creativity, and a collaborative spirit to every project. She is committed to empowering others and building a more just, healthy, and sustainable world-one lesson, one space, and one community at a time</p>                    
+                </p> 
+                <!-- Button trigger modal 1-->
+    <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        View CV
+      </button></center>
+      &nbsp;
+                </div>
+                <div class="vh-100"></div>
+             </div>
+        </div>
+
+               <div class="container-fluid">
+            &nbsp;
+            &nbsp;
+        </div>
+         <!-- slide 2 -->
+         <div class="row justify-content-start"> &nbsp;
+            <div id="slide2-background-holder" class="vh-100 z-n1 sticky-top">
+                </div>
+                <div class="col-10 offset-1 col-sm-5 offset-6 bg-light">
+                    <h4>From Ashes to Agency:</h4><h6>The role of Freire-based Architecture in the Community-Led Resilience of Post-Wildfire Altadena</h6>
+                    <figcaption class="figure-caption text-center">Masters Thesis</figcaption>
+                    <p class="m-3">What if, rather than using top-down approaches to design, architecture was used as a liberatory tool to foster healing, belonging, and repair?</p>
+                    <p class="m-3">My final M.Arch thesis aimed to demonstrate how co-design and trauma-informed practices can lead to more equitable, culturally sensitive, and resilient outcomes in post-disaster contexts. It draws from Paulo Freire's critical pedagogy, which aims to empower communities historically excluded from shaping their built environment rather than rely on colonial top-down approaches.</p>
+                    <p class="m-3">Freire posits that those who have experienced oppression may internalize and replicate oppressive patterns, seeking higher status within the hierarchy of oppression so that the oppression no longer applies to them. To disrupt this cycle, he advocates for liberatory praxis that empowers individuals to work collectively to prevent replicating these harmful dynamics.</p>                    
+                <p class="m-3">This research proposes to shift the architect's role from expert to facilitator when working with communities who have experienced community-level trauma coupled with a history of systemic oppression and inequitable resource distribution, isms, and phobias. It advocates avoiding misguided saviorism to instead work toward genuine community-led development. The research also examines how architectural practice can either perpetuate dependency and displacement or equip communities with resources to work toward their own liberation.</p>
+                <p class="m-3">To do this I analyzed the recovery efforts in Altadena after the wildfires in January to better understand how this approach could apply to post-disaster reconstruction projects</p>       
+                            <!-- Button trigger modal 2-->
+                <div class="text-center">                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+        Learn More
+      </button>
+            </div>   
+             &nbsp;</div>
+            <div class="vh-100"></div>
+            </div>
+        </div>
+                   </div>
+
+                             <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                    <h4>My Story</h4>
+                    <p>Through a lot of hard work and community support, I, a first-gen, low income student just completed my Masters of Architecture degree from the University of California Berkeley which is wild given how hard I have had to work my way out of poverty and other forms of adversity. But I made it! 🙏🏿</p>
+
+                    <p>For context, I didn't have the traditional education arch. There was a time in my life when I was homeless but I was offered a full 4 year tuition scholarship to complete my undergraduate degree.</p>
+
+                    <p>It's been 2 decades since I re-taught myself math after failing a math class at Michigan State. But I credit the late Sheila Tobias, a professor at Princeton, who refuted the idea that women didn't have mathematical minds for giving me the kind of affirming guidance to try again and work my way up to Calculus 3 and the completion of my undergraduate education.</p>
+
+                    <p>Years later after learning how to code and working in curriculum design, community organizing, and public health, I worked in municipal government. But the death of Breonna Taylor and other Black leaders in my community facing role on behalf of the local government made it difficult to continue in that capacity so based on community feedback I chose to learn a skill that could actually change the material conditions of groups who have been historically marginalized by inequitable resource distribution, isms, and phobias in our institutions and policies. It certainly wasn't an easy feat so completing grad school as a first generation student is a big deal. Especially given that social justice hasn't historically been a core value of the industry I selected.</p>
+
+                    <p>So what's next?</p>
+
+                    <p>While I will be taking a few months to update my portfolio and look for full-time work in community led design, I will also be working as a Bay area STEAM educator teaching students how to code, do robotics, ai, and graphic design.</p>
+
+                    <p>If you know of social mission aligned architecture firms that have positions available that you think might be an appropriate fit for an entry level architect with my unique perspective and experiences, please feel free to send those recommendations. </p>
+
+                    <p>Introductions are also welcome.</p>
+    
+                    </div>
+                </div><!--close .row-->
+    
+                      </div> 
+            </div> 
+            <!-- close container -->
+<div class="container-fluid">
+<div>&nbsp;</div>
+               <!-- slide 3 -->
+               <div class="row justify-content-start">
+                <div id="slide3-background-holder" class="vh-100 z-n1 sticky-top">
+                    </div>
+                    <div class="col-10 offset-1 col-sm-5 offset-1 bg-light mb-5">
+                     &nbsp;
+                        <h4>Music that I've made</h4>
+                        <p class="m-3">These are sample works from my beat making course at UC Berkeley.</p>
+                    <!-- Button trigger modal 3-->
+                <div class="text-center">                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+        Learn More 
+      </button>
+      <div>&nbsp;</div>
+                    </div>
+
+                </div>
+            </div> <!-- close container -->
+            <div class="container-fluid">
+<div>&nbsp;</div>
+               <!-- slide 4 -->
+               <div class="row justify-content-start">
+                <div id="slide4-background-holder" class="vh-100 z-n1 sticky-top">
+                    </div>
+                    <div class="col-10 offset-1 col-sm-5 offset-6 bg-light mb-5">
+                     &nbsp;
+                        <h4>Architecture Portfolio</h4>
+                        <p class="m-3">These are sample works from my Masters of Architecture program at Cal.</p>
+                    
+      
+                    </div>
+
+                </div>
+            </div> <!-- close container -->
+            <div class="container-fluid">&nbsp;
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-3"><div class="col-2"><div style="height: auto; display: flex; align-items: flex-end;">
+                
+                        <p><br><br><br><br><br><br><br><br><br><br>Digital Representation</p>
+                        
+</div><p style="font-size: 60%;">Fall 2023 - Fall 2024</p></div></div>
+                    <div class="col-8">
+        <img src="images/draft_57_33_lighter.png" class="img-fluid" alt=""></div>
+             <div class="offset-4 col-4"><!-- Button trigger modal A1-->
+                <div class="text-center">  <br>                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalA1">
+        Click to View More Project Samples 
+      </button></div>
+    </div>
+            <div>&nbsp; &nbsp;<br><br></div>
+            <div class="row">
+            <div class="col-12">
+            <img src="images/sample works_Page_05.png" class="img-fluid" alt=""></div>
+            <div class="offset-4 col-4"><!-- Button trigger modal A2-->
+                <div class="text-center">  <br>                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalA2">
+        Click to Learn More 
+      </button></div></div>
+            <div>&nbsp; &nbsp;</div>
+             <h4>Abolitionist Architecture</h4>
+             <div class="row">
+             <div class="col-2"></div>
+                    <div class="col-2"><div style="height: auto; display: flex; align-items: flex-end;">
+                
+                        <p><br><br><br><br><br><br><br><br><br><br><br>Why abolitionist architecture?</p>
+                            </div><p></p>
+                        </div>
+                    <div class="col-8">
+            <img src="images/IMG_20231129_193839_958.webp" class="img-fluid" alt=""></div>
+                       <div>&nbsp; &nbsp; <br>
+                        
+                       </div> <p>The way that I chose to approach the need for housing centered in collective care was through the creation of a mixed use development that combines supportive services with worker-owned cooperatives to create spaces where residents could experience a shared sense of ownership and a sense of dignity and belonging.</p>
+                        <p>The commercial space on the ground floor is designed to not only provide dignified employment opportunities and skill building for building occupants, but also provides amenities that allow the space to connect the site to the fabric of the surrounding community. </p> 
+                        <p>In addition to providing counseling and supportive services, a community kitchen, laundromat, bodega, gym, and barber shop, the space is activated by worker owned cooperatives designed to show compatible uses like the ceramics studio and a plant store, art supply store and art gallery, gym and juicery. The site also houses a coding school and coworking space, graphic design firm, screen printer, and copy shop.</p>
+                        <p>With regard to the public circulation, the ground floor uses two breezeway corridors to activate the site and create a sense of connectivity with the commercial spaces that currently exist. </p>
+                        <p>The private circulation begins at the 8th street breezeway. The elevators to access the residential spaces are located in the central core. There’s also a stairway in the corridor that serves as a feature stair and light well.</p>
+                        <p>The 3 unit types are arranged to bring in natural light, with market rate units facing Washington Street, affordable units facing 8th street, and supportive housing overlooking the rear plaza.</p>
+</div>
+                         <div class="row">
+    <div class="col-12">
+        <img src="images/full section.png" class="img-fluid full-section-image" alt="" id="full-section-image">
+<button class="btn btn-sm btn-secondary mb-2 fullscreen-btn" data-target="#full-section-image">
+    Fullscreen
+</button>
+    </div>
+</div>
+                    </div></div><div>&nbsp; &nbsp;</div> 
+                   <div class="row">
+            <div class="col-12">
+            <img src="images/A900 renderings and title page_Page_1.png" class="img-fluid" alt=""></div>
+            <div class="offset-4 col-4"><!-- Button trigger modal A2-->
+                <div class="text-center">  <br>                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalA4">
+        Click to Learn More About the Ferry Terminal + VertiPort Project 
+      </button></div></div>
+            <div>&nbsp; &nbsp;</div> 
+      </div></div>
+            <div class="container-fluid">
+<div>&nbsp;</div>
+               <!-- slide 5 -->
+               <div class="row justify-content-start">
+                <div id="slide5-background-holder" class="vh-100 z-n1 sticky-top">
+                    </div>
+                    <div class="col-10 offset-1 col-sm-5 offset-1 bg-light mb-5">
+                     &nbsp;
+                        <h4>Creative Projects</h4>
+                        <p class="m-3">Here you'll find examples of some of my personal creative projects.</p>
+                    <!-- Button trigger modal 3-->
+                <div class="text-center">                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+        Learn More 
+      </button>
+      <div>&nbsp;</div>
+                    </div>
+
+                </div>
+            </div> <!-- close container -->
+
+                       <div class="container-fluid">
+<div>&nbsp;</div>
+               <!-- slide 6 -->
+               <div class="row justify-content-start">
+                <div id="slide6-background-holder" class="vh-100 z-n1 sticky-top">
+                    </div>
+                    <div class="col-10 offset-1 col-sm-5 offset-1 bg-light mb-5">
+                     &nbsp;
+                        <h4>STEAM curriculum</h4>
+                        <p class="m-3">Under Construction</p>
+                    <!-- Button trigger modal 3-->
+                <div class="text-center">                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+        Learn More 
+      </button>
+      <div>&nbsp;</div>
+                    </div>
+
+                </div>
+            </div> <!-- close container -->
+
+  
+
+             <div class="row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+&nbsp;
+  <p>For inquiries about curriculum or jobs, feel free to contact me at: <a href="monicaleslie.pro@gmail.com"> monicaleslie.pro@gmail.com </a> ! </p>
+&nbsp; 
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    &nbsp;
+    Contact Form
+  </a>
+
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="mb-3">
+          <label for="fname" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div class="mb-3">
+          <label for="lname" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div class="mb-3">
+          <label for="request" class="form-label">How can I help</label>
+          <select id="request" name="request" class="form-select">
+            <option value="">Please select an option</option>
+            <option value="Event">Event Invitation</option>
+            <option value="Inquiry">Curriculum Guidance</option>
+            <option value="Volunteer">Recruiter</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="subject" class="form-label">Subject</label>
+          <textarea id="subject" name="subject" class="form-control" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div>&nbsp;</div>
+
+            <!-- close container -->
+
+                            <footer class="container-fluid bg-dark">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <p class="text-white text-center py-5">Project by Monica</p>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- Modal 1-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Monica Leslie's CV</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="ratio ratio-16x9">
+            <iframe width="auto" height="1015" src="https://afro-architect.github.io/CV/" title="Background" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                 <!-- Modal 2-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Presentation Slides</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="ratio ratio-4x3">
+            <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/just analysis_Page_1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just analysis_Page_2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just analysis_Page_3.png" class="d-block w-100" alt="...">
+                      </div>
+                       <div class="carousel-item">
+                        <img src="images/just analysis_Page_4.png" class="d-block w-100" alt="...">
+                      </div>
+                        <div class="carousel-item">
+                        <img src="images/just analysis_Page_7.png" class="d-block w-100" alt="...">
+                      </div>
+                       <div class="carousel-item">
+                        <img src="images/just analysis_Page_8.png" class="d-block w-100" alt="...">
+                      </div>
+                        <div class="carousel-item">
+                        <img src="images/just_plans_Page_2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_plans_Page_3.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_plans_Page_4.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_plans_Page_5.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_plans_Page_6.png" class="d-block w-100" alt="...">
+                      </div>
+                       <div class="carousel-item">
+                        <img src="images/just_plans_Page_1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_plans_Page_7.png" class="d-block w-100" alt="...">
+                      </div>
+                       <div class="carousel-item">
+                        <img src="images/just_renderings_Page_0.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_renderings_Page_1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_renderings_Page_2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/just_renderings_Page_3.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+                    <figcaption class="figure-caption text-center">Monica Leslie's Thesis Submission Spring 2025</figcaption>
+               
+                </div>
+                 <p>Figure 1: shows ESRI data prior to the LA wildfires in January of 2025</p>
+                 <p>Figure 2: shows the extent of structural damage in Altadena that was documented in the Cal Fire Damage Maps on Esri. The structures in red represent the homes that were lost and the structures in blue are what remains.</p> 
+                 <p>Figure 3: are maps that illustrate critical infrastructure that existed or may have been missing prior to the Altadena wildfires. This slide also includes analysis of evacuation routes, which proved to be a barrier when the wildfires erupted as well as a bit of site analysis of the sun path and wind directions that may inform how future structures should be built to maximize daylighting or increase fire resistance in the event of a future fire event.</p>
+                 <p>Figure 4: In the thesis presentation I note to the reviewers that once critical infrastructure and site analysis are performed, this provides the architect the opportunity to initiate community-led decision-making through the co-creation of resources like asset maps, using maps and dot exercises to determine what kind of resources should be prioritized and if needed built to increase community resilience. This also creates the opportunities to engage in shared dialogue around site selection, program amentities for the site, etc.</p><p>But how does this translate to architecture? The following images demonstrate how a speculative group of decisions could translate into a building massing, space planning, and program of a particular site. In the case of this particular slide I demonstrate how a speculative decision was made to possibly place a resilience hub along Fair Oaks given that this corridor is the most direct evacuation route toward the highway that wouldn't redirect residents back toward the fire. </p>
+                 <p>Figure 5: demonstrates massing strategies that could be used to create a mixed use development that addresses many of the pain points residents raised on social media, in community meetings, and with the SOCAL NOMA chapter of architects. The proposed mixed use development would need to have lots of daylight, ventillation and accessible circulation corridors, public and private spaces to gather, and transitional housing to accommodate many of the multi-generational families that have been displaced and construction labor force.</p>
+                 <p>Figure 6: speculatively behaves as if residents agreed to build the mixed use development that would serve as a resilience hub at the corner of Ventura and Fair Oaks nex to the cemetary on a commercial lot rather than encroach on any residents' private property. </p>
+                 <p>Figure 7: shows what that structure could look like in this case from the perspective of underground parking and shows which entrances shoppers and residents can use to access the building</p>
+                 <p>Figure 8: shows what that structure could look like on the ground floor</p>
+                 <p>Figure 9: shows what that structure could look like on the second floor</p>
+                 <p>Figure 10: shows what that structure could look like on the third floor</p>
+                 <p>Figure 11: shows what that structure could look like on the fourth floor</p>
+                 <p>Figure 12: shows what that structure could look like on the roof</p>
+                 <p>Figure 13: shows what this speculative project would look like from the front and side views</p>
+                 <p>Figure 14-17: provides an example of how residents decisions could result in an occupiable building</p>
+
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3-->
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Beat-Making Projects</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="ratio ratio-16x9">
+                <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=836185701/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afroarchitect.bandcamp.com/track/categorically">Categorically by AfroArchitect</a></iframe></div>
+                <div class="ratio ratio-16x9"><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3286637351/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afroarchitect.bandcamp.com/track/taste-tha-funk">Taste tha Funk by AfroArchitect</a></iframe></div>
+               
+            <div class="ratio ratio-16x9"><iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/track=3921411072/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://afroarchitect.bandcamp.com/track/fo-tha-ride">Fo tha Ride by AfroArchitect</a></iframe></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal A1-->
+<div class="modal fade" id="exampleModalA1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Digital Representation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                 <p>This project... narrative under construction</p>     
+            <div>&nbsp; &nbsp;</div>
+            <img src="images/draft_57_33_lighter.png" class="img-fluid" alt="">
+            <img src="images/plan draft 3.png" class="img-fluid" alt="">
+             <div>&nbsp; &nbsp;</div>
+             
+  
+</div>
+
+            <h4></h4>
+           </div></div>
+      </div>
+    </div>
+  </div>  
+  <!-- Modal A2-->
+<div class="modal fade" id="exampleModalA2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Oakland Library Project</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                      
+            <div>&nbsp; &nbsp;</div>
+            <img src="images/sample works_Page_05.png" class="img-fluid" alt="">
+            <div>&nbsp; &nbsp;</div>
+            <img src="images/sample works_Page_04.png" class="img-fluid" alt="">
+             <div>&nbsp; &nbsp;</div>
+             
+  
+</div>
+
+            <h4></h4>
+           </div></div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Modal A4-->
+<div class="modal fade" id="exampleModalA4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Mission Bay Ferry Terminal & Vertiport</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+                      
+            <div>&nbsp; &nbsp;</div>
+           <img src="images/A900 renderings and title page_Page_1.png" class="img-fluid full-section-image" alt="" id="full-section-image">
+  <br>
+            <p>Project Narrative under construction</p>
+    <br>
+             <div>&nbsp; &nbsp;</div>
+           <img src="images/A010 site map 1536_128.png" alt="" class="img-fluid" >
+  <br>
+            <div>&nbsp; &nbsp;</div>
+           <img src="images/A900 renderings and title page_Page_2.png" alt="" class="img-fluid" >
+  <br>
+            <div>&nbsp; &nbsp;</div>
+           <img src="images/A900 renderings and title page_Page_3.png" alt="" class="img-fluid" ">
+  <br>
+            <div>&nbsp; &nbsp;</div>
+             
+  
+</div>
+
+            <h4></h4>
+           </div></div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal 5-->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sample Works</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+            <p>under construction</p>
+            <h4><a href="">Graphics & Publishing</a></h4><p>with Adobe Illustrator & InDesign</h4>
+            <img src="images/Architecture Portfolio_Spread (1)_Page_2.png" class="img-fluid" alt="">
+                         <h4><a href="https://www.behance.net/gallery/60554653/Presentation-Templates-for-Social-Media">Graphics & Publishing</a></h4><p>with Adobe Illustrator & InDesign</p>
+            <img src="images/boyce.jpg" class="img-fluid" alt="">
+            <div>&nbsp;</div>
+            <h4>Ceramics</h4>
+            <img src="images/pottery.webp" class="img-fluid" alt="">
+            <img src="images/lidded jar.png" class="img-fluid" alt="">
+            <img src="images/nested bowls.png" class="img-fluid" alt="">
+        <h4>Screenprinting</h4>
+            <img src="images/screenprinting.jpg" class="img-fluid" alt="">
+            
+        </div></div></div>
+      </div>
+    </div>
+  </div>
+
+      <!-- Modal 6-->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sample Works</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <img src="images/ascd_rubric.png" class="img-fluid" alt="Rubric">
+                <div>&nbsp;</div>
+           <h4><a href="">Coding </a></h4><p>with Scratch, a coding platform from MIT</h4>
+            <img src="images/scratch.gif" class="img-fluid" alt="">
+            <h4><a href="">Lego Robotics</a></h4><p>with Lego Spike</p>
+            <h4><a href="">Graphics & Publishing</a></h4><p>with Adobe Illustrator & InDesign</h4>
+            <img src="images/pictograms.png" class="img-fluid" alt="">
+            <h4><a href="https://www.behance.net/gallery/58240943/UX-to-UI-Productivity-App" target="_blank">UX | UI</a></h4><p>with Adobe XD</p>
+            <img src="images/wireframe.png" class="img-fluid" alt="">
+            &nbsp;
+            <h4><a href="https://www.behance.net/gallery/60560435/Game-Design" target="_blank">Game & Character Design</a></h4><p> with Character Animator, Unity, & Adobe Fuse</p>
+            <img src="images/game design.png" class="img-fluid" alt="">
+            &nbsp;
+            <h4>Podcasting with Adobe Audition</h4>
+            <img src="images/podcast.png" class="img-fluid" alt="">
+            &nbsp;
+            <h4>Cinemagraphs</h4>
+            <img src="images/cinemagraph.gif" class="img-fluid" alt=""></div></div></div>
+      </div>
+    </div>
+  </div>
+         
+        <script src="js/bootstrap.bundle.js"></script>
+        <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const iframe = document.querySelector(".modal iframe");
+iframe.style.height = `${window.innerHeight * 0.8}px`; // 80% of viewport height
+  });</script>
+<script>
+ document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('fullscreen-btn')) {
+    let img = document.querySelector(event.target.getAttribute('data-target'));
+    if (img && img.requestFullscreen) {
+      img.requestFullscreen();
+    } else if (img && img.webkitRequestFullscreen) {
+      img.webkitRequestFullscreen();
+    } else if (img && img.msRequestFullscreen) {
+      img.msRequestFullscreen();
+    }
+  }
+});
+</script>
+
+    </body>
+
+    </html>
