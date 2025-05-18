@@ -9,6 +9,11 @@
         <style>
  
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 
@@ -35,12 +40,11 @@
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover; /* or 'cover' if you want to crop edges, but 'contain' keeps original aspect */
+  object-fit: contain; /* or 'cover' if you want to crop edges, but 'contain' keeps original aspect */
   background: #000;
   position: static;
   z-index: 1;
 }
-
  .hero-video-wrapper {
   position: relative;
   width: 100vw;
@@ -49,16 +53,15 @@
   overflow: hidden;
   background: #000;
 }
-
 @media (max-width: 600px) {
   .hero-video-wrapper,
   video.fullscreen {
     width: 100vw;
     height: auto;
-
+    min-height: unset;
+    max-height: unset;
   }
 }
-                
 
 .mute-btn {
   position: absolute;
@@ -80,7 +83,7 @@
 .mute-btn i {
   pointer-events: none;
 }           
-             #slide1-background-holder{
+            #slide1-background-holder{
                 background-image: url(../images/selfie.png);
                 background-size: cover;
                 background-position: center;
@@ -88,7 +91,7 @@
             }
         
             #slide2-background-holder{
-                background-image: url("../images/just analysis_Page_5.png");
+                background-image: url(../images/just\ analysis_Page_5.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
@@ -122,7 +125,6 @@
                 background-repeat: no-repeat;
             }
 
-
             .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(1) grayscale(100); /* makes arrows visible on light backgrounds */
@@ -153,7 +155,7 @@
   <video id="heroVideo" class="fullscreen" autoplay muted loop playsinline  poster="images/poster.png">
     <source src="images/15-web-hero.mp4" type="video/mp4">
   </video>
-  <button id="muteBtn" class="mute-btn">
+  <button id="muteBtn" class="mute-btn"
         <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
   </button>
 </div>
@@ -195,24 +197,25 @@
 
 
         <div class="container-fluid">
-  <div class="row justify-content-center">
-    <!-- Background holder: position absolute or fixed, fills row -->
-    <div id="slide1-background-holder" class="z-n1 sticky-top"></div>
-    <!-- Foreground content: column(s) above background -->
-    <div class="col-12 col-sm-6 bg-light position-relative" style="z-index:1;">
-      <figcaption class="figure-caption text-center">ABOUT ME</figcaption>
-      <p class="m-3">Monica Leslie is a dedicated STEAM educator ...</p>
-      <p>Monica’s experience spans from developing innovative ...</p>
-      <p>Whether leading participatory budgeting pilots ...</p>
-      <center>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          View CV
-        </button>
-      </center>
+            <!-- slide 1 -->
+             <div class="row justify-content-center">
+                <div id="slide1-background-holder" class="vh-100 z-n1 sticky-top">
+                </div>
+                <div class=" col-12 col-sm-6 bg-light">
+                    <figcaption class="figure-caption text-center">ABOUT ME</figcaption>
+                   <p class="m-3">Monica Leslie is a dedicated STEAM educator and recent graduate of the Master of Architecture program at the University of California, Berkeley. With a passion for design justice, eco design, and health equity, Monica’s work bridges the worlds of architecture, education, and community engagement. At UC Berkeley, she specialized in reimagining architectural practice so that it is used as a liberatory tool rather than how the practice has been deployed historically.</p>
+                    <p>Monica’s experience spans from developing innovative STEAM curricula for diverse learners to coordinating community-driven health equity initiatives in Louisville, where she worked to address systemic disparities in health and housing. Her approach is rooted in the belief that thoughtful design and inclusive education can transform communities and foster well-being for all.</p>
+                    <p>Whether leading participatory budgeting pilots, designing sustainable spaces, or mentoring future changemakers, Monica brings warmth, creativity, and a collaborative spirit to every project. She is committed to empowering others and building a more just, healthy, and sustainable world-one lesson, one space, and one community at a time</p>                    
+                </p> 
+                <!-- Button trigger modal 1-->
+    <center><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        View CV
+      </button></center>
       &nbsp;
-    </div>
-  </div>
-</div>
+                </div>
+                <div class="vh-100"></div>
+             </div>
+        </div>
 
                <div class="container-fluid">
             &nbsp;
@@ -220,7 +223,7 @@
         </div>
          <!-- slide 2 -->
          <div class="row justify-content-start"> &nbsp;
-            <div id="slide2-background-holder" class="z-n1 sticky-top">
+            <div id="slide2-background-holder" class="vh-100 z-n1 sticky-top">
                 </div>
                 <div class="col-10 offset-1 col-sm-5 offset-6 bg-light">
                     <h4>From Ashes to Agency:</h4><h6>The role of Freire-based Architecture in the Community-Led Resilience of Post-Wildfire Altadena</h6>
@@ -237,7 +240,7 @@
             </div>   
              &nbsp;</div>
             
-        </div></div>
+        </div>
                    
 
                              <div class="container mt-5">
@@ -271,7 +274,7 @@
 <div>&nbsp;</div>
                <!-- slide 3 -->
                <div class="row justify-content-start">
-                <div id="slide3-background-holder" class="z-n1 sticky-top">
+                <div id="slide3-background-holder" class="vh-100 z-n1 sticky-top">
                     </div>
                     <div class="col-10 offset-1 col-sm-5 offset-1 bg-light mb-5">
                      &nbsp;
