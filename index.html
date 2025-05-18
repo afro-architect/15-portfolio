@@ -5,17 +5,7 @@
         <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Monica Leslie Portfolio</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
- 
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-
 
             *:has(> video.fullscreen){
                 position: relative;
@@ -35,91 +25,43 @@ img {
                     width:100%;
                 }
             }
-            @media (max-width: 600px) {
- video.fullscreen {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain; /* or 'cover' if you want to crop edges, but 'contain' keeps original aspect */
-  background: #000;
-  position: static;
-  z-index: 1;
-}
- .hero-video-wrapper {
-  position: relative;
-  width: 100vw;
-  max-width: 100vw;
-  height: auto;
-  overflow: hidden;
-  background: #000;
-}
-@media (max-width: 600px) {
-  .hero-video-wrapper,
-  video.fullscreen {
-    width: 100vw;
-    height: auto;
-    min-height: unset;
-    max-height: unset;
-  }
-}
-
-.mute-btn {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  background: rgba(0,0,0,0.5);
-  border: none;
-  border-radius: 50%;
-  padding: 8px;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.2em;
-  transition: background 0.2s;
-}
-.mute-btn:hover {
-  background: rgba(0,0,0,0.8);
-}
-.mute-btn i {
-  pointer-events: none;
-}           
             #slide1-background-holder{
-                background-image: url(../images/selfie.png);
+                background-image: url(images/selfie.png);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
             }
         
             #slide2-background-holder{
-                background-image: url(../images/just\ analysis_Page_5.png);
+                background-image: url(images/just\ analysis_Page_5.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
             }
 
             #slide3-background-holder{
-                background-image: url(../images/Bandcamp_profile_pic.png);
+                background-image: url(images/Bandcamp_profile_pic.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
             }
 
                         #slide4-background-holder{
-                background-image: url(../images/cover_photo.png);
+                background-image: url(images/cover_photo.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
             }
 
                         #slide5-background-holder{
-                background-image: url(../images/xitlaly.png);
+                background-image: url(images/xitlaly.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
             }
 
                                     #slide6-background-holder{
-                background-image: url(../images/adobe_education_trainer.png);
+                background-image: url(images/adobe_education_trainer.png);
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
@@ -138,10 +80,6 @@ img {
 :fullscreen .modal-backdrop {
     display: none !important;
 }
-            #muteBtn, #muteBtn i {
-  cursor: pointer;
-  pointer-events: all;
-}
                       
         </style>
     </head>
@@ -150,21 +88,17 @@ img {
         <header class="position-relative vh-100 d-flex flex-column justify-content-center">
             <div class="text-white text-center">
                 </div>
-            <div class="hero-video-wrapper">
-            <div style="position: relative; width: 100%; max-width: 100vw;">
-  <video id="heroVideo" class="fullscreen" autoplay muted loop playsinline  poster="images/poster.png">
-    <source src="images/15-web-hero.mp4" type="video/mp4">
-  </video>
-  <button id="muteBtn" class="mute-btn"
-        <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
-  </button>
-</div>
+            <div class="h-100 position-absolute w-100 top-1 start-0 video-holder z-n1">
+                <video autoplay muted loop playsinline class="fullscreen">
+  <source src="images/15-web-hero.mp4" type="video/mp4">
+</video>
+            </div>
 
         </header>
 
         <div class="container">
             <div class="row" justify-content-center>
-                <div>
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
 
                     <h4 class="text-center mt-5">Welcome to my portfolio</h4>
                     <p class="text-center">The coding for this site was done by Monica</p>
@@ -176,16 +110,16 @@ img {
             <div class="row justify-content-center">
                 <figure class=" col-12 col-sm-10">
                     <div class="ratio ratio-4x3">
-                   <iframe width="100%" height="300" src="//jsfiddle.net/lesliemo/9xvmownk/4/embedded/result,js,html,css/" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>    
+                    <iframe width="100%" height="300" src="//jsfiddle.net/lesliemo/9xvmownk/4/embedded/" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"></iframe>    
                     </div>
                     <figcaption class="figure-caption text-center">Early Self Taught Projects Made With JSFiddle</figcaption>
                 </figure>
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
                    &nbsp; 
-                   <p>To view the html behind the section detail interactive, click tabs to toggle and see html and inline css. You can also hover on the image and it will highlight different construction elements </p></div>
+                   <p>To view, click on html or result to view the section detail. You can also hover on the image and it will highlight different construction elements </p></div>
                    <p>I self taught myself how to code and worked as an instructional media specialist for a curriculum design firm but started out coding inline css and javascript. This is a sample of my early work but I have quite a bit of early stuff on <a href="https://github.com/lesliemo">github</a> as well if you'd like to see the progression over time.</p>
                 <p>Unfortunately I don't have many work samples from building online courses in Moodle and Canvas for Universities because the work was proprietary but I will be adding more work samples from recent work soon.</p>
                 <p>I DO, however, have sample works I can share from my time as an Adobe Education Trainer through the Education Exchange. Will add soon.</p>
@@ -239,15 +173,15 @@ img {
       </button>
             </div>   
              &nbsp;</div>
-            
+            <div class="vh-100"></div>
+            </div>
         </div>
-                   
+                   </div>
 
                              <div class="container mt-5">
-
-                    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-12">
-                        <br>
-                    <center><h4>My Story</h4></center>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-8 col-lg-6 colxxl-5">
+                    <h4>My Story</h4>
                     <p>Through a lot of hard work and community support, I, a first-gen, low income student just completed my Masters of Architecture degree from the University of California Berkeley which is wild given how hard I have had to work my way out of poverty and other forms of adversity. But I made it! 🙏🏿</p>
 
                     <p>For context, I didn't have the traditional education arch. There was a time in my life when I was homeless but I was offered a full 4 year tuition scholarship to complete my undergraduate degree.</p>
@@ -409,7 +343,7 @@ img {
   
 
              <div class="row justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8 col-lg-3">
+    <div class="col-12 col-sm-10 col-md-8 col-lg-6">
 &nbsp;
   <p>For inquiries about curriculum or jobs, feel free to contact me at: <a href="monicaleslie.pro@gmail.com"> monicaleslie.pro@gmail.com </a> ! </p>
 &nbsp; 
@@ -758,25 +692,6 @@ iframe.style.height = `${window.innerHeight * 0.8}px`; // 80% of viewport height
       img.msRequestFullscreen();
     }
   }
-});
-</script>
-        <script>
- document.addEventListener("DOMContentLoaded", function() {
-  var video = document.getElementById("heroVideo");
-  var btn = document.getElementById("muteBtn");
-  var icon = btn.querySelector("i");
-
-  btn.addEventListener("click", function() {
-    video.muted = !video.muted;
-    if (video.muted) {
-      icon.className = "fas fa-volume-mute";
-      btn.title = "Unmute";
-    } else {
-      icon.className = "fas fa-volume-up";
-      btn.title = "Mute";
-      video.play(); // Ensures audio plays after unmuting
-    }
-  });
 });
 </script>
 
