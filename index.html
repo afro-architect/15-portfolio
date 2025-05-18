@@ -92,6 +92,9 @@
                 <video autoplay muted loop playsinline class="fullscreen">
   <source src="images/15-web-hero.mp4" type="video/mp4">
 </video>
+                <button id="unmuteBtn" style="position:absolute;top:20px;left:20px;z-index:2;">
+  🔊 Unmute
+</button>
             </div>
 
         </header>
@@ -693,6 +696,13 @@ iframe.style.height = `${window.innerHeight * 0.8}px`; // 80% of viewport height
     }
   }
 });
+</script>
+        <script>
+  document.getElementById('unmuteBtn').onclick = function() {
+    var vid = document.getElementById('heroVideo');
+    vid.muted = !vid.muted;
+    this.textContent = vid.muted ? '🔇 Unmute' : '🔊 Mute';
+  };
 </script>
 
     </body>
