@@ -5,6 +5,7 @@
         <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Monica Leslie Portfolio</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
 
             *:has(> video.fullscreen){
@@ -92,9 +93,10 @@
                 <video autoplay muted loop playsinline class="fullscreen">
   <source src="images/15-web-hero.mp4" type="video/mp4">
 </video>
-                <button id="unmuteBtn" style="position:absolute;top:20px;left:20px;z-index:2;">
-  🔊 Unmute
-</button>
+                <button id="muteBtn"
+    style="position:absolute;top:20px;left:20px;z-index:10; background:rgba(0,0,0,0.4);border:none;border-radius:50%;padding:12px;cursor:pointer;">
+    <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
+  </button>
             </div>
 
         </header>
