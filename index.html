@@ -58,7 +58,13 @@
   overflow: hidden;
   background: #000;
 }
-
+@media (max-width: 400px) {
+  .hero-video-wrapper,
+  video.fullscreen {
+    height: 40vw;
+    min-height: 120px;
+    max-height: 40vh;
+  }
 video.fullscreen {
   position: absolute;
   top: 50%;
