@@ -46,14 +46,14 @@ img {
   z-index: 1;
 }
 
-@media (max-width: 600px) {
-  .hero-video-wrapper,
-  video.fullscreen {
-    width: 100vw;
-    height: auto;
-    min-height: 200px;
-    max-height: unset;
-  }
+
+                 .hero-video-wrapper {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  overflow: hidden;
+  background: #000;
 }
 
 .mute-btn {
