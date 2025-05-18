@@ -48,6 +48,52 @@
     margin: 0 auto;
   }
 }
+ .hero-video-wrapper {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  height: 56vw;    /* 16:9 aspect ratio for mobile */
+  min-height: 180px;
+  max-height: 60vh;
+  overflow: hidden;
+  background: #000;
+}
+
+video.fullscreen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56vw;    /* Match wrapper for 16:9, adjust as needed */
+  min-height: 180px;
+  max-height: 60vh;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  background: #000;
+  display: block;
+}
+
+.mute-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+  transition: background 0.2s;
+}
+.mute-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+.mute-btn i {
+  pointer-events: none;
+}           
             #slide1-background-holder{
                 background-image: url(images/selfie.png);
                 background-size: cover;
@@ -115,13 +161,13 @@
         <header class="position-relative vh-100 d-flex flex-column justify-content-center">
             <div class="text-white text-center">
                 </div>
+            <div class="hero-video-wrapper">
             <div style="position: relative; width: 100%; max-width: 100vw;">
-  <video id="heroVideo" autoplay muted loop playsinline class="fullscreen" poster="images/poster.png">
+  <video id="heroVideo" class="fullscreen" autoplay muted loop playsinline  poster="images/poster.png">
     <source src="images/15-web-hero.mp4" type="video/mp4">
   </video>
-  <button id="muteBtn"
-    style="position:absolute;top:20px;left:20px;z-index:10; background:rgba(0,0,0,0.4);border:none;border-radius:50%;padding:12px;">
-    <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
+  <button id="muteBtn" class="mute-btn"
+        <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
   </button>
 </div>
 
