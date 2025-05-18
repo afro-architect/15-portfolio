@@ -700,11 +700,22 @@ iframe.style.height = `${window.innerHeight * 0.8}px`; // 80% of viewport height
 });
 </script>
         <script>
-  document.getElementById('unmuteBtn').onclick = function() {
-    var vid = document.getElementById('heroVideo');
-    vid.muted = !vid.muted;
-    this.textContent = vid.muted ? '🔇 Unmute' : '🔊 Mute';
-  };
+ document.addEventListener("DOMContentLoaded", function() {
+  var video = document.getElementById("heroVideo");
+  var btn = document.getElementById("muteBtn");
+  var icon = btn.querySelector("i");
+
+  btn.addEventListener("click", function() {
+    video.muted = !video.muted;
+    if (video.muted) {
+      icon.className = "fas fa-volume-mute";
+      btn.title = "Unmute";
+    } else {
+      icon.className = "fas fa-volume-up";
+      btn.title = "Mute";
+    }
+  });
+});
 </script>
 
     </body>
