@@ -12,13 +12,13 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-header {
-  margin: 0 !important;
-  padding: 0 !important;
-  position: relative;
-  top: 0;
-  left: 0;
-}
+@media (max-width: 600px) {
+  header {
+    display: block !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+  
             .main-content {
   width: 65%;
   margin: 0 auto;
@@ -35,10 +35,16 @@ header {
             }
 
 .hero-video-wrapper {
-  position: relative;
-  width: 100vw;
-  height: auto;
-  overflow: hidden;
+    width: 100vw;
+    height: 40vh;
+    min-height: 180px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    top: 0;
+    left: 0;
+  }
 }
 
             .hero-video {
