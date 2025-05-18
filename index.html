@@ -5,6 +5,7 @@
         <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
         <title>Monica Leslie Portfolio</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
 
             *:has(> video.fullscreen){
@@ -25,6 +26,28 @@
                     width:100%;
                 }
             }
+
+            .mute-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2em;
+  transition: background 0.2s;
+}
+.mute-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+.mute-btn i {
+  pointer-events: none;
+}           
+
             #slide1-background-holder{
                 background-image: url(images/selfie.png);
                 background-size: cover;
@@ -89,10 +112,15 @@
             <div class="text-white text-center">
                 </div>
             <div class="h-100 position-absolute w-100 top-1 start-0 video-holder z-n1">
-                <video autoplay muted loop playsinline class="fullscreen">
-  <source src="images/15-web-hero.mp4" type="video/mp4">
-</video>
-            </div>
+                <video id="heroVideo" class="fullscreen" autoplay muted loop playsinline>
+    <source src="images/15-web-hero.mp4" type="video/mp4">
+  </video>
+
+            <button id="muteBtn" class="mute-btn">
+        <i class="fas fa-volume-mute" style="color:#fff; font-size: 1.7em;"></i>
+  </button>
+</div>
+
 
         </header>
 
