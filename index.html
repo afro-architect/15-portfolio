@@ -7,13 +7,25 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <style>
-            body {
-  font-size: 1rem; /* or your normal base size */
+ 
+
+@media (min-width: 1400px) {
+body {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (min-width: 1400px) {
   body {
-    font-size: 0.9rem; /* shrink for large screens */
+    font-size: 0.95rem;
+  }
+  img {
+    max-width: 60%;
   }
 }
 
