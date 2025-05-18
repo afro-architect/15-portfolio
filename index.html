@@ -2,7 +2,7 @@ ter<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta bane="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Monica Leslie Portfolio</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -118,6 +118,21 @@ ter<!DOCTYPE html>
                 background-repeat: no-repeat;
                 width: vw-80;
             }
+
+            @media (max-width: 600px) {
+  #slide1-background-holder,
+  #slide2-background-holder,
+  #slide3-background-holder,
+  #slide4-background-holder,
+  #slide5-background-holder,
+  #slide6-background-holder {
+    background-size: cover;
+    min-height: 60vh;
+    height: 60vh;
+    width: 100vw;
+  }
+}
+
 
             .carousel-control-prev-icon,
 .carousel-control-next-icon {
