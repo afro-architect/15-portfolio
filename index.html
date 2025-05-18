@@ -41,16 +41,7 @@
   z-index: 1;
 }
 
-@media (max-width: 600px) {
-  .hero-video-wrapper,
-  video.fullscreen {
-    width: 100vw;
-    height: auto;
-    min-height: 200px;
-    max-height: unset;
-  }
-}
-                 .hero-video-wrapper {
+ .hero-video-wrapper {
   position: relative;
   width: 100vw;
   max-width: 100vw;
@@ -58,6 +49,16 @@
   overflow: hidden;
   background: #000;
 }
+
+@media (max-width: 600px) {
+  .hero-video-wrapper,
+  video.fullscreen {
+    width: 100vw;
+    height: auto;
+
+  }
+}
+                
 
 .mute-btn {
   position: absolute;
@@ -79,13 +80,11 @@
 .mute-btn i {
   pointer-events: none;
 }           
-            #slide1-background-holder{
+             #slide1-background-holder{
                 background-image: url(images/selfie.png);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
         
             #slide2-background-holder{
@@ -93,8 +92,6 @@
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
 
             #slide3-background-holder{
@@ -102,8 +99,6 @@
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
 
                         #slide4-background-holder{
@@ -111,8 +106,6 @@
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
 
                         #slide5-background-holder{
@@ -120,8 +113,6 @@
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
 
                                     #slide6-background-holder{
@@ -129,9 +120,8 @@
                 background-size: cover;
                 background-position: right;
                 background-repeat: no-repeat;
-                min-height: 100vh;
-                width: 100vw;
             }
+
 
             .carousel-control-prev-icon,
 .carousel-control-next-icon {
