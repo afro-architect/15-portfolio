@@ -706,13 +706,15 @@ iframe.style.height = `${window.innerHeight * 0.8}px`; // 80% of viewport height
   var icon = btn.querySelector("i");
 
   btn.addEventListener("click", function() {
-    video.muted = !video.muted;
     if (video.muted) {
-      icon.className = "fas fa-volume-mute";
-      btn.title = "Unmute";
-    } else {
+      video.muted = false;
+      video.play(); // <-- This is important!
       icon.className = "fas fa-volume-up";
       btn.title = "Mute";
+    } else {
+      video.muted = true;
+      icon.className = "fas fa-volume-mute";
+      btn.title = "Unmute";
     }
   });
 });
