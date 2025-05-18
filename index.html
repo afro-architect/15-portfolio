@@ -26,6 +26,16 @@
                     width:100%;
                 }
             }
+            @media (max-width: 600px) {
+  video.fullscreen {
+    position: static !important;
+    width: 100vw !important;
+    height: auto !important;
+    z-index: 1 !important;
+    display: block;
+    margin: 0 auto;
+  }
+}
             #slide1-background-holder{
                 background-image: url(images/selfie.png);
                 background-size: cover;
