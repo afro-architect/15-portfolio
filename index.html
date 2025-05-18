@@ -19,16 +19,15 @@
             *:has(> video.fullscreen){
                 position: relative;
             }
-            video.fullscreen {
-    width: 100vw;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: block;
-  }
+            video.fullscreen{
+                height: 100%;
+                width: auto;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                z-index: -1;
+            }
             @media (min-aspect-ratio: 16/9){
                 video.fullscreen{
                     height:auto;
@@ -45,16 +44,15 @@
 }
 
 @media (max-width: 600px) {
-  .hero-video-wrapper {
+  .hero-video-wrapper,
+  video.fullscreen {
     width: 100vw;
-    height: 40vh;         /* or 50vh for a larger hero */
-    min-height: 180px;    /* ensures visibility on very small screens */
-    position: relative;
-    overflow: hidden;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+      margin-top: 0 !important;
+  padding-top: 0 !important;
+    
+
   }
- 
+}
 
 button,
 .mute-btn,
