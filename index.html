@@ -40,13 +40,21 @@ img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: contain; /* or 'cover' if you want to crop edges, but 'contain' keeps original aspect */
+  object-fit: cover; /* or 'cover' if you want to crop edges, but 'contain' keeps original aspect */
   background: #000;
   position: static;
   z-index: 1;
 }
 
-
+@media (max-width: 600px) {
+  .hero-video-wrapper,
+  video.fullscreen {
+    width: 100vw;
+    height: auto;
+    min-height: 200px;
+    max-height: unset;
+  }
+}
                  .hero-video-wrapper {
   position: relative;
   width: 100vw;
