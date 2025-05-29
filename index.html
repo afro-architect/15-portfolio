@@ -229,6 +229,13 @@ button,
 :fullscreen .modal-backdrop {
     display: none !important;
 }
+            .video-small {
+  width: 60%;    /* or a fixed value like 300px */
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
                       
         </style>
     </head>
@@ -736,10 +743,10 @@ button,
                  <h4>Building Websites</h4>
                   <div>&nbsp;</div>
                 
-                <div>
-                       <video autoplay muted loop playsinline>
-    <source src="images/innorender.mp4" style="width: 20%; height: 20%;" type="video/mp4" controls>
-  </video></div>
+                <video class="video-small" autoplay muted loop playsinline controls>
+                  <source src="images/innorender.mp4" type="video/mp4">
+  
+                    </video>
 
                  <h4>Currently learning Python for Machine Learning on the back end</h4>
                 <p>Note: the current video is a simulation of what the expected outcome is of this project. I built the front end but am learning how to make the website and backend talk to each other through comfyui, which I have some experience with.</p>
